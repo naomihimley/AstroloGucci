@@ -30,22 +30,6 @@ public extension NSDate {
     }
 
     /**
-    Instance method that returns the Chinese Animal associated to the NSDate entered
-
-    - returns: The Animal type enumerated value
-    */
-    public func chineseZodiacAnimal()-> Animal {
-        let startS = "1924"
-        let f = NSDateFormatter()
-        f.dateFormat = "yyyy"
-        let s = f.dateFromString(startS)
-        let d = NSDate(adate: self)
-        let interv = d.timeIntervalSinceDate(s!)
-        let y = Int(interv / 60 / 60 / 24 / 365)
-        return Animal(rawValue: y % 12)!
-    }
-
-    /**
     Compares if a NSDate object is between two other dates. All dates should be formatted like "MMM dd yyyy"
 
     - parameter firstDate:  The earlier date to check if the NSDate is after this date.
