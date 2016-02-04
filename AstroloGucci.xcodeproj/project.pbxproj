@@ -23,6 +23,7 @@
 		8C80732C1C63B62D001841D8 /* AstroloGucciTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C80732B1C63B62D001841D8 /* AstroloGucciTests.swift */; };
 		8C8073371C63B62D001841D8 /* AstroloGucciUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8073361C63B62D001841D8 /* AstroloGucciUITests.swift */; };
 		8C8073391C63B62D001841D8 /* XCTestCase+KIFTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8073381C63B62D001841D8 /* XCTestCase+KIFTester.swift */; };
+		8C80734C1C63F870001841D8 /* RFExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C80734B1C63F870001841D8 /* RFExtensions.swift */; };
 		C971CC018FC47929C66FE411 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76C3A3240B677FA6A4676C8 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,7 @@
 		8C8073361C63B62D001841D8 /* AstroloGucciUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroloGucciUITests.swift; sourceTree = "<group>"; };
 		8C8073381C63B62D001841D8 /* XCTestCase+KIFTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+KIFTester.swift"; sourceTree = "<group>"; };
 		8C80733A1C63B62D001841D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C80734B1C63F870001841D8 /* RFExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RFExtensions.swift; sourceTree = "<group>"; };
 		B2A7A3CA7D3D148FB14676F0 /* Pods-AstroloGucciTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AstroloGucciTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AstroloGucciTests/Pods-AstroloGucciTests.release.xcconfig"; sourceTree = "<group>"; };
 		BE32835AEFB8CE2AAEC69D83 /* Pods-AstroloGucciUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AstroloGucciUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AstroloGucciUITests/Pods-AstroloGucciUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C76C3A3240B677FA6A4676C8 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -221,6 +223,7 @@
 		8C80730B1C63B62D001841D8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				8C80734B1C63F870001841D8 /* RFExtensions.swift */,
 				8C80730C1C63B62D001841D8 /* .gitkeep */,
 			);
 			name = Extensions;
@@ -597,6 +600,7 @@
 				8C8073131C63B62D001841D8 /* TestingAppDelegate.swift in Sources */,
 				8C8073111C63B62D001841D8 /* AppDelegate.swift in Sources */,
 				8C8073161C63B62D001841D8 /* ViewController.swift in Sources */,
+				8C80734C1C63F870001841D8 /* RFExtensions.swift in Sources */,
 				8C80730F1C63B62D001841D8 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
