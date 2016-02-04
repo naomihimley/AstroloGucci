@@ -146,11 +146,9 @@
 		8C8072EF1C63B62D001841D8 /* AstroloGucci */ = {
 			isa = PBXGroup;
 			children = (
+				8C8073461C63CDD5001841D8 /* Storyboards */,
 				8C8073101C63B62D001841D8 /* AppDelegate.swift */,
 				8C8073121C63B62D001841D8 /* TestingAppDelegate.swift */,
-				8C80731A1C63B62D001841D8 /* Images.xcassets */,
-				8C80731C1C63B62D001841D8 /* Main-AstroloGucci.storyboard */,
-				8C80731F1C63B62D001841D8 /* LaunchScreen.xib */,
 				8C8073221C63B62D001841D8 /* Info.plist */,
 				8C8072F01C63B62D001841D8 /* Controls */,
 				8C8072F21C63B62D001841D8 /* Data Sources */,
@@ -184,6 +182,8 @@
 		8C8072F41C63B62D001841D8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8C80731F1C63B62D001841D8 /* LaunchScreen.xib */,
+				8C80731A1C63B62D001841D8 /* Images.xcassets */,
 				8C8072F51C63B62D001841D8 /* .gitkeep */,
 			);
 			name = Resources;
@@ -259,6 +259,14 @@
 				8C80733A1C63B62D001841D8 /* Info.plist */,
 			);
 			path = AstroloGucciUITests;
+			sourceTree = "<group>";
+		};
+		8C8073461C63CDD5001841D8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8C80731C1C63B62D001841D8 /* Main-AstroloGucci.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 		EC06453D67FB2CB9742F8CD4 /* Pods */ = {
