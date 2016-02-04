@@ -6,9 +6,25 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		8C12FD7D1C63FFE100DA7283 /* GeneratedFiles */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8C12FD7F1C63FFE100DA7283 /* Build configuration list for PBXAggregateTarget "GeneratedFiles" */;
+			buildPhases = (
+				8C12FD7E1C63FFE100DA7283 /* Cat2Cat Script */,
+			);
+			dependencies = (
+			);
+			name = GeneratedFiles;
+			productName = GeneratedFiles;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		284EA57FEB98EF9A911188AA /* Pods_AstroloGucciUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDAC6C014163D58770704D19 /* Pods_AstroloGucciUITests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		2918A2589678C3CB0AD4008F /* Pods_AstroloGucciTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD022D487E29BE97A6E9A9E /* Pods_AstroloGucciTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		8C2CD3C71C64013C005A9BCC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C2CD3C61C64013C005A9BCC /* Images.xcassets */; };
+		8C2CD3C91C6401E4005A9BCC /* Generated Files in Resources */ = {isa = PBXBuildFile; fileRef = 8C2CD3C81C6401E4005A9BCC /* Generated Files */; };
 		8C8073081C63B62D001841D8 /* AstroloGucci-Non-UI-Tests.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 8C8073071C63B62D001841D8 /* AstroloGucci-Non-UI-Tests.xcscheme */; };
 		8C80730A1C63B62D001841D8 /* AstroloGucci.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 8C8073091C63B62D001841D8 /* AstroloGucci.xcscheme */; };
 		8C80730D1C63B62D001841D8 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 8C80730C1C63B62D001841D8 /* .gitkeep */; };
@@ -17,7 +33,6 @@
 		8C8073131C63B62D001841D8 /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8073121C63B62D001841D8 /* TestingAppDelegate.swift */; };
 		8C8073161C63B62D001841D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8073151C63B62D001841D8 /* ViewController.swift */; };
 		8C8073191C63B62D001841D8 /* DLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8073181C63B62D001841D8 /* DLog.swift */; };
-		8C80731B1C63B62D001841D8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C80731A1C63B62D001841D8 /* Images.xcassets */; };
 		8C80731E1C63B62D001841D8 /* Main-AstroloGucci.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C80731C1C63B62D001841D8 /* Main-AstroloGucci.storyboard */; };
 		8C8073211C63B62D001841D8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C80731F1C63B62D001841D8 /* LaunchScreen.xib */; };
 		8C80732C1C63B62D001841D8 /* AstroloGucciTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C80732B1C63B62D001841D8 /* AstroloGucciTests.swift */; };
@@ -50,6 +65,8 @@
 		48B590762A64A18FEDC6B9CC /* Pods-AstroloGucciUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AstroloGucciUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AstroloGucciUITests/Pods-AstroloGucciUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7FD022D487E29BE97A6E9A9E /* Pods_AstroloGucciTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AstroloGucciTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF65CF06E9E59654D111CE6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8C2CD3C61C64013C005A9BCC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Resources/Images.xcassets; sourceTree = "<group>"; };
+		8C2CD3C81C6401E4005A9BCC /* Generated Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Generated Files"; sourceTree = "<group>"; };
 		8C8072ED1C63B62D001841D8 /* AstroloGucci.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstroloGucci.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C8072F11C63B62D001841D8 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitkeep; path = Controls/.gitkeep; sourceTree = "<group>"; };
 		8C8072F31C63B62D001841D8 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitkeep; path = "Data Sources/.gitkeep"; sourceTree = "<group>"; };
@@ -67,7 +84,6 @@
 		8C8073121C63B62D001841D8 /* TestingAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
 		8C8073151C63B62D001841D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "View Controllers/ViewController.swift"; sourceTree = "<group>"; };
 		8C8073181C63B62D001841D8 /* DLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DLog.swift; path = Utilities/DLog.swift; sourceTree = "<group>"; };
-		8C80731A1C63B62D001841D8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8C80731D1C63B62D001841D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Main-AstroloGucci.storyboard"; sourceTree = "<group>"; };
 		8C8073201C63B62D001841D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8C8073221C63B62D001841D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -152,6 +168,7 @@
 				8C8073101C63B62D001841D8 /* AppDelegate.swift */,
 				8C8073121C63B62D001841D8 /* TestingAppDelegate.swift */,
 				8C8073221C63B62D001841D8 /* Info.plist */,
+				8C2CD3C81C6401E4005A9BCC /* Generated Files */,
 				8C8072F01C63B62D001841D8 /* Controls */,
 				8C8072F21C63B62D001841D8 /* Data Sources */,
 				8C8072F41C63B62D001841D8 /* Resources */,
@@ -185,7 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				8C80731F1C63B62D001841D8 /* LaunchScreen.xib */,
-				8C80731A1C63B62D001841D8 /* Images.xcassets */,
+				8C2CD3C61C64013C005A9BCC /* Images.xcassets */,
 				8C8072F51C63B62D001841D8 /* .gitkeep */,
 			);
 			name = Resources;
@@ -391,6 +408,7 @@
 				8C8072EC1C63B62C001841D8 /* AstroloGucci */,
 				8C8073261C63B62D001841D8 /* AstroloGucciTests */,
 				8C8073311C63B62D001841D8 /* AstroloGucciUITests */,
+				8C12FD7D1C63FFE100DA7283 /* GeneratedFiles */,
 			);
 		};
 /* End PBXProject section */
@@ -401,11 +419,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C8073081C63B62D001841D8 /* AstroloGucci-Non-UI-Tests.xcscheme in Resources */,
-				8C80731B1C63B62D001841D8 /* Images.xcassets in Resources */,
+				8C2CD3C71C64013C005A9BCC /* Images.xcassets in Resources */,
 				8C80731E1C63B62D001841D8 /* Main-AstroloGucci.storyboard in Resources */,
 				8C8073211C63B62D001841D8 /* LaunchScreen.xib in Resources */,
 				8C80730A1C63B62D001841D8 /* AstroloGucci.xcscheme in Resources */,
 				8C80730D1C63B62D001841D8 /* .gitkeep in Resources */,
+				8C2CD3C91C6401E4005A9BCC /* Generated Files in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +504,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AstroloGucciUITests/Pods-AstroloGucciUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		8C12FD7E1C63FFE100DA7283 /* Cat2Cat Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Cat2Cat Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#Make this path the path to the folder where you're keeping the Cat2Cat executable.\nCAT2CAT_DIR=\"${PROJECT_DIR}/Pods/Cat2Cat/CocoaPod\"\n\n#The full path to the Cat2Cat executable, which will start the script - Note that if you rename the executable, you will need to adjust the name here.\nCAT2CAT_EXECUTABLE=\"${CAT2CAT_DIR}/Cat2Cat\"\n\n#Asset catalog file, including the .xcassets extension, relative to the PROJECT_DIR.\nASSET_CATALOG=\"AstroloGucci/Resources/Images.xcassets\"\n\n#The output directory for your category file, relative to the PROJECT_DIR.\nCATEGORY_OUTPUT_DIRECTORY=\"AstroloGucci/Generated Files\"\n\necho \"${CAT2CAT_EXECUTABLE}\" --ios --objc --base-path=\"${PROJECT_DIR}\" --asset-catalog=\"${ASSET_CATALOG}\" --output-dir=\"${CATEGORY_OUTPUT_DIRECTORY}\"\n\n#The actual script!\n\"${CAT2CAT_EXECUTABLE}\" --ios --objc --base-path=\"${PROJECT_DIR}\" --asset-catalog=\"${ASSET_CATALOG}\" --output-dir=\"${CATEGORY_OUTPUT_DIRECTORY}\"";
 		};
 		8C8072E71C63B62C001841D8 /* Version Incrementing Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -657,6 +690,20 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8C12FD801C63FFE100DA7283 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8C12FD811C63FFE100DA7283 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		8C80733B1C63B62D001841D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -826,6 +873,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8C12FD7F1C63FFE100DA7283 /* Build configuration list for PBXAggregateTarget "GeneratedFiles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C12FD801C63FFE100DA7283 /* Debug */,
+				8C12FD811C63FFE100DA7283 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8C8072E61C63B62C001841D8 /* Build configuration list for PBXProject "AstroloGucci" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
