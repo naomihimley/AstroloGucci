@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (3.1.5)
+  - Cat2Cat (2.0.0)
+  - ILGHttpConstants (1.0.1)
+  - KIF (3.3.2):
+    - KIF/Core (= 3.3.2)
+  - KIF/Core (3.3.2)
+  - VOKBenkode (0.2.1)
+  - VOKMockUrlProtocol (2.1.0):
+    - ILGHttpConstants (~> 1.0.0)
+    - VOKBenkode (~> 0.2.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - Cat2Cat
+  - ILGHttpConstants
+  - KIF
+  - VOKMockUrlProtocol
+
+SPEC CHECKSUMS:
+  Alamofire: 5f730ba29fd113b7ddd71c1e65d0c630acf5d7b0
+  Cat2Cat: a5fa06b4a26d2ada4faa0337a75de5f633bc2114
+  ILGHttpConstants: 715aca4c2b260527059242c0088abc748b52f98e
+  KIF: 9de83fa627adaf65d28ace31e40f19d830bc255c
+  VOKBenkode: 7f17656dbb496b472c12913d1a8b8bc15b43d0bd
+  VOKMockUrlProtocol: ef7ae569644af00e94f7cf25f12120e8117b612d
+
+COCOAPODS: 0.38.2
