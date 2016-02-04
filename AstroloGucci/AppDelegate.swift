@@ -11,6 +11,4 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
-    //WARN: Did you read the instructions? :D 
 }

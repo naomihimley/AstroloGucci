@@ -24,21 +24,33 @@
 		284EA57FEB98EF9A911188AA /* Pods_AstroloGucciUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDAC6C014163D58770704D19 /* Pods_AstroloGucciUITests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		2918A2589678C3CB0AD4008F /* Pods_AstroloGucciTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD022D487E29BE97A6E9A9E /* Pods_AstroloGucciTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		8C2CD3C71C64013C005A9BCC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C2CD3C61C64013C005A9BCC /* Images.xcassets */; };
-		8C2CD3C91C6401E4005A9BCC /* Generated Files in Resources */ = {isa = PBXBuildFile; fileRef = 8C2CD3C81C6401E4005A9BCC /* Generated Files */; };
 		8C8073081C63B62D001841D8 /* AstroloGucci-Non-UI-Tests.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 8C8073071C63B62D001841D8 /* AstroloGucci-Non-UI-Tests.xcscheme */; };
 		8C80730A1C63B62D001841D8 /* AstroloGucci.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 8C8073091C63B62D001841D8 /* AstroloGucci.xcscheme */; };
 		8C80730D1C63B62D001841D8 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 8C80730C1C63B62D001841D8 /* .gitkeep */; };
 		8C80730F1C63B62D001841D8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C80730E1C63B62D001841D8 /* main.swift */; };
 		8C8073111C63B62D001841D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8073101C63B62D001841D8 /* AppDelegate.swift */; };
 		8C8073131C63B62D001841D8 /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8073121C63B62D001841D8 /* TestingAppDelegate.swift */; };
-		8C8073161C63B62D001841D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8073151C63B62D001841D8 /* ViewController.swift */; };
+		8C8073161C63B62D001841D8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8073151C63B62D001841D8 /* HomeViewController.swift */; };
 		8C8073191C63B62D001841D8 /* DLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8073181C63B62D001841D8 /* DLog.swift */; };
 		8C80731E1C63B62D001841D8 /* Main-AstroloGucci.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C80731C1C63B62D001841D8 /* Main-AstroloGucci.storyboard */; };
 		8C8073211C63B62D001841D8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C80731F1C63B62D001841D8 /* LaunchScreen.xib */; };
 		8C80732C1C63B62D001841D8 /* AstroloGucciTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C80732B1C63B62D001841D8 /* AstroloGucciTests.swift */; };
 		8C8073371C63B62D001841D8 /* AstroloGucciUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8073361C63B62D001841D8 /* AstroloGucciUITests.swift */; };
 		8C8073391C63B62D001841D8 /* XCTestCase+KIFTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8073381C63B62D001841D8 /* XCTestCase+KIFTester.swift */; };
+		8C8073481C63F504001841D8 /* ZodiacSignCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8073471C63F504001841D8 /* ZodiacSignCell.swift */; };
+		8C80734A1C63F785001841D8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8073491C63F785001841D8 /* Constants.swift */; };
 		8C80734C1C63F870001841D8 /* RFExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C80734B1C63F870001841D8 /* RFExtensions.swift */; };
+		8CA54DCD1C6408540030454D /* Cat2CatUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA54DCC1C6408540030454D /* Cat2CatUIImage.swift */; };
+		8CA54DDC1C6409DA0030454D /* Alamofire in Resources */ = {isa = PBXBuildFile; fileRef = 8CA54DCF1C6409D90030454D /* Alamofire */; };
+		8CA54DDD1C6409DA0030454D /* Cat2Cat in Resources */ = {isa = PBXBuildFile; fileRef = 8CA54DD01C6409D90030454D /* Cat2Cat */; };
+		8CA54DDE1C6409DA0030454D /* Headers in Resources */ = {isa = PBXBuildFile; fileRef = 8CA54DD11C6409D90030454D /* Headers */; };
+		8CA54DDF1C6409DA0030454D /* ILGHttpConstants in Resources */ = {isa = PBXBuildFile; fileRef = 8CA54DD21C6409D90030454D /* ILGHttpConstants */; };
+		8CA54DE01C6409DA0030454D /* KIF in Resources */ = {isa = PBXBuildFile; fileRef = 8CA54DD31C6409D90030454D /* KIF */; };
+		8CA54DE11C6409DA0030454D /* Local Podspecs in Resources */ = {isa = PBXBuildFile; fileRef = 8CA54DD41C6409D90030454D /* Local Podspecs */; };
+		8CA54DE21C6409DA0030454D /* Manifest.lock in Resources */ = {isa = PBXBuildFile; fileRef = 8CA54DD51C6409D90030454D /* Manifest.lock */; };
+		8CA54DE31C6409DA0030454D /* Target Support Files in Resources */ = {isa = PBXBuildFile; fileRef = 8CA54DD91C6409DA0030454D /* Target Support Files */; };
+		8CA54DE41C6409DA0030454D /* VOKBenkode in Resources */ = {isa = PBXBuildFile; fileRef = 8CA54DDA1C6409DA0030454D /* VOKBenkode */; };
+		8CA54DE51C6409DA0030454D /* VOKMockUrlProtocol in Resources */ = {isa = PBXBuildFile; fileRef = 8CA54DDB1C6409DA0030454D /* VOKMockUrlProtocol */; };
 		C971CC018FC47929C66FE411 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76C3A3240B677FA6A4676C8 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -57,6 +69,62 @@
 			remoteGlobalIDString = 8C8072EC1C63B62C001841D8;
 			remoteInfo = AstroloGucci;
 		};
+		8CA54DEE1C6409DA0030454D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CA54DD61C6409D90030454D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 013CC639DC81B458992C6668EE11543C;
+			remoteInfo = Alamofire;
+		};
+		8CA54DF01C6409DA0030454D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CA54DD61C6409D90030454D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 007AA26C3B4B54BBD1414A251F61CB7D;
+			remoteInfo = ILGHttpConstants;
+		};
+		8CA54DF21C6409DA0030454D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CA54DD61C6409D90030454D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7C5AEC94A64F1683454C2E3851C1D4B7;
+			remoteInfo = KIF;
+		};
+		8CA54DF41C6409DA0030454D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CA54DD61C6409D90030454D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5E9E3A85502BD311A2AF0F2B484BB6E1;
+			remoteInfo = Pods;
+		};
+		8CA54DF61C6409DA0030454D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CA54DD61C6409D90030454D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 17E6AC7D6BA570EA055D13E6C007CA87;
+			remoteInfo = "Pods-AstroloGucciTests";
+		};
+		8CA54DF81C6409DA0030454D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CA54DD61C6409D90030454D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F379AF9337D0776A9C92D61B97FD6081;
+			remoteInfo = "Pods-AstroloGucciUITests";
+		};
+		8CA54DFA1C6409DA0030454D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CA54DD61C6409D90030454D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 43CBDA3C6D17E02F98F575F02D0DCA24;
+			remoteInfo = VOKBenkode;
+		};
+		8CA54DFC1C6409DA0030454D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CA54DD61C6409D90030454D /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ACA37676194CF90D66BC3E7333B7BD0B;
+			remoteInfo = VOKMockUrlProtocol;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -66,7 +134,6 @@
 		7FD022D487E29BE97A6E9A9E /* Pods_AstroloGucciTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AstroloGucciTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF65CF06E9E59654D111CE6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8C2CD3C61C64013C005A9BCC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Resources/Images.xcassets; sourceTree = "<group>"; };
-		8C2CD3C81C6401E4005A9BCC /* Generated Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Generated Files"; sourceTree = "<group>"; };
 		8C8072ED1C63B62D001841D8 /* AstroloGucci.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstroloGucci.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C8072F11C63B62D001841D8 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitkeep; path = Controls/.gitkeep; sourceTree = "<group>"; };
 		8C8072F31C63B62D001841D8 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitkeep; path = "Data Sources/.gitkeep"; sourceTree = "<group>"; };
@@ -82,7 +149,7 @@
 		8C80730E1C63B62D001841D8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		8C8073101C63B62D001841D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C8073121C63B62D001841D8 /* TestingAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
-		8C8073151C63B62D001841D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "View Controllers/ViewController.swift"; sourceTree = "<group>"; };
+		8C8073151C63B62D001841D8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = "View Controllers/HomeViewController.swift"; sourceTree = "<group>"; };
 		8C8073181C63B62D001841D8 /* DLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DLog.swift; path = Utilities/DLog.swift; sourceTree = "<group>"; };
 		8C80731D1C63B62D001841D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Main-AstroloGucci.storyboard"; sourceTree = "<group>"; };
 		8C8073201C63B62D001841D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -94,7 +161,21 @@
 		8C8073361C63B62D001841D8 /* AstroloGucciUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroloGucciUITests.swift; sourceTree = "<group>"; };
 		8C8073381C63B62D001841D8 /* XCTestCase+KIFTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+KIFTester.swift"; sourceTree = "<group>"; };
 		8C80733A1C63B62D001841D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C8073471C63F504001841D8 /* ZodiacSignCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZodiacSignCell.swift; path = Views/ZodiacSignCell.swift; sourceTree = "<group>"; };
+		8C8073491C63F785001841D8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8C80734B1C63F870001841D8 /* RFExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RFExtensions.swift; sourceTree = "<group>"; };
+		8CA54DCC1C6408540030454D /* Cat2CatUIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cat2CatUIImage.swift; path = "Generated Files/Cat2CatUIImage.swift"; sourceTree = "<group>"; };
+		8CA54DCF1C6409D90030454D /* Alamofire */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Alamofire; path = Pods/Alamofire; sourceTree = "<group>"; };
+		8CA54DD01C6409D90030454D /* Cat2Cat */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Cat2Cat; path = Pods/Cat2Cat; sourceTree = "<group>"; };
+		8CA54DD11C6409D90030454D /* Headers */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Headers; path = Pods/Headers; sourceTree = "<group>"; };
+		8CA54DD21C6409D90030454D /* ILGHttpConstants */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ILGHttpConstants; path = Pods/ILGHttpConstants; sourceTree = "<group>"; };
+		8CA54DD31C6409D90030454D /* KIF */ = {isa = PBXFileReference; lastKnownFileType = folder; name = KIF; path = Pods/KIF; sourceTree = "<group>"; };
+		8CA54DD41C6409D90030454D /* Local Podspecs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Local Podspecs"; path = "Pods/Local Podspecs"; sourceTree = "<group>"; };
+		8CA54DD51C6409D90030454D /* Manifest.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Manifest.lock; path = Pods/Manifest.lock; sourceTree = "<group>"; };
+		8CA54DD61C6409D90030454D /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
+		8CA54DD91C6409DA0030454D /* Target Support Files */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Target Support Files"; path = "Pods/Target Support Files"; sourceTree = "<group>"; };
+		8CA54DDA1C6409DA0030454D /* VOKBenkode */ = {isa = PBXFileReference; lastKnownFileType = folder; name = VOKBenkode; path = Pods/VOKBenkode; sourceTree = "<group>"; };
+		8CA54DDB1C6409DA0030454D /* VOKMockUrlProtocol */ = {isa = PBXFileReference; lastKnownFileType = folder; name = VOKMockUrlProtocol; path = Pods/VOKMockUrlProtocol; sourceTree = "<group>"; };
 		B2A7A3CA7D3D148FB14676F0 /* Pods-AstroloGucciTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AstroloGucciTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AstroloGucciTests/Pods-AstroloGucciTests.release.xcconfig"; sourceTree = "<group>"; };
 		BE32835AEFB8CE2AAEC69D83 /* Pods-AstroloGucciUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AstroloGucciUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AstroloGucciUITests/Pods-AstroloGucciUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C76C3A3240B677FA6A4676C8 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,11 +245,11 @@
 		8C8072EF1C63B62D001841D8 /* AstroloGucci */ = {
 			isa = PBXGroup;
 			children = (
-				8C8073461C63CDD5001841D8 /* Storyboards */,
 				8C8073101C63B62D001841D8 /* AppDelegate.swift */,
 				8C8073121C63B62D001841D8 /* TestingAppDelegate.swift */,
 				8C8073221C63B62D001841D8 /* Info.plist */,
-				8C2CD3C81C6401E4005A9BCC /* Generated Files */,
+				8CA54DCE1C6408830030454D /* Generated Files */,
+				8C8073461C63CDD5001841D8 /* Storyboards */,
 				8C8072F01C63B62D001841D8 /* Controls */,
 				8C8072F21C63B62D001841D8 /* Data Sources */,
 				8C8072F41C63B62D001841D8 /* Resources */,
@@ -212,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				8C8072F71C63B62D001841D8 /* .gitkeep */,
+				8C8073471C63F504001841D8 /* ZodiacSignCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -249,7 +331,7 @@
 		8C8073141C63B62D001841D8 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8C8073151C63B62D001841D8 /* ViewController.swift */,
+				8C8073151C63B62D001841D8 /* HomeViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -258,6 +340,7 @@
 			isa = PBXGroup;
 			children = (
 				8C8073181C63B62D001841D8 /* DLog.swift */,
+				8C8073491C63F785001841D8 /* Constants.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -289,9 +372,43 @@
 			name = Storyboards;
 			sourceTree = "<group>";
 		};
+		8CA54DCE1C6408830030454D /* Generated Files */ = {
+			isa = PBXGroup;
+			children = (
+				8CA54DCC1C6408540030454D /* Cat2CatUIImage.swift */,
+			);
+			name = "Generated Files";
+			sourceTree = "<group>";
+		};
+		8CA54DD71C6409D90030454D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CA54DEF1C6409DA0030454D /* Alamofire.framework */,
+				8CA54DF11C6409DA0030454D /* ILGHttpConstants.framework */,
+				8CA54DF31C6409DA0030454D /* KIF.framework */,
+				8CA54DF51C6409DA0030454D /* Pods.framework */,
+				8CA54DF71C6409DA0030454D /* Pods_AstroloGucciTests.framework */,
+				8CA54DF91C6409DA0030454D /* Pods_AstroloGucciUITests.framework */,
+				8CA54DFB1C6409DA0030454D /* VOKBenkode.framework */,
+				8CA54DFD1C6409DA0030454D /* VOKMockUrlProtocol.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		EC06453D67FB2CB9742F8CD4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				8CA54DCF1C6409D90030454D /* Alamofire */,
+				8CA54DD01C6409D90030454D /* Cat2Cat */,
+				8CA54DD11C6409D90030454D /* Headers */,
+				8CA54DD21C6409D90030454D /* ILGHttpConstants */,
+				8CA54DD31C6409D90030454D /* KIF */,
+				8CA54DD41C6409D90030454D /* Local Podspecs */,
+				8CA54DD51C6409D90030454D /* Manifest.lock */,
+				8CA54DD61C6409D90030454D /* Pods.xcodeproj */,
+				8CA54DD91C6409DA0030454D /* Target Support Files */,
+				8CA54DDA1C6409DA0030454D /* VOKBenkode */,
+				8CA54DDB1C6409DA0030454D /* VOKMockUrlProtocol */,
 				8BF65CF06E9E59654D111CE6 /* Pods.debug.xcconfig */,
 				40D4E8F30B6D7CA51C71A034 /* Pods.release.xcconfig */,
 				174FBB93C3E20F8A80FA6278 /* Pods-AstroloGucciTests.debug.xcconfig */,
@@ -403,6 +520,12 @@
 			mainGroup = 8C8072E21C63B62C001841D8;
 			productRefGroup = 8C8072EE1C63B62D001841D8 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8CA54DD71C6409D90030454D /* Products */;
+					ProjectRef = 8CA54DD61C6409D90030454D /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8C8072EC1C63B62C001841D8 /* AstroloGucci */,
@@ -413,18 +536,86 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		8CA54DEF1C6409DA0030454D /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 8CA54DEE1C6409DA0030454D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8CA54DF11C6409DA0030454D /* ILGHttpConstants.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ILGHttpConstants.framework;
+			remoteRef = 8CA54DF01C6409DA0030454D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8CA54DF31C6409DA0030454D /* KIF.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KIF.framework;
+			remoteRef = 8CA54DF21C6409DA0030454D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8CA54DF51C6409DA0030454D /* Pods.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods.framework;
+			remoteRef = 8CA54DF41C6409DA0030454D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8CA54DF71C6409DA0030454D /* Pods_AstroloGucciTests.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_AstroloGucciTests.framework;
+			remoteRef = 8CA54DF61C6409DA0030454D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8CA54DF91C6409DA0030454D /* Pods_AstroloGucciUITests.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_AstroloGucciUITests.framework;
+			remoteRef = 8CA54DF81C6409DA0030454D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8CA54DFB1C6409DA0030454D /* VOKBenkode.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = VOKBenkode.framework;
+			remoteRef = 8CA54DFA1C6409DA0030454D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8CA54DFD1C6409DA0030454D /* VOKMockUrlProtocol.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = VOKMockUrlProtocol.framework;
+			remoteRef = 8CA54DFC1C6409DA0030454D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		8C8072EA1C63B62C001841D8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8C8073081C63B62D001841D8 /* AstroloGucci-Non-UI-Tests.xcscheme in Resources */,
+				8CA54DE51C6409DA0030454D /* VOKMockUrlProtocol in Resources */,
+				8CA54DE01C6409DA0030454D /* KIF in Resources */,
+				8CA54DDD1C6409DA0030454D /* Cat2Cat in Resources */,
+				8CA54DDC1C6409DA0030454D /* Alamofire in Resources */,
+				8CA54DE41C6409DA0030454D /* VOKBenkode in Resources */,
+				8CA54DDE1C6409DA0030454D /* Headers in Resources */,
 				8C2CD3C71C64013C005A9BCC /* Images.xcassets in Resources */,
 				8C80731E1C63B62D001841D8 /* Main-AstroloGucci.storyboard in Resources */,
 				8C8073211C63B62D001841D8 /* LaunchScreen.xib in Resources */,
+				8CA54DDF1C6409DA0030454D /* ILGHttpConstants in Resources */,
 				8C80730A1C63B62D001841D8 /* AstroloGucci.xcscheme in Resources */,
+				8CA54DE11C6409DA0030454D /* Local Podspecs in Resources */,
+				8CA54DE21C6409DA0030454D /* Manifest.lock in Resources */,
 				8C80730D1C63B62D001841D8 /* .gitkeep in Resources */,
-				8C2CD3C91C6401E4005A9BCC /* Generated Files in Resources */,
+				8CA54DE31C6409DA0030454D /* Target Support Files in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,9 +822,12 @@
 			files = (
 				8C8073191C63B62D001841D8 /* DLog.swift in Sources */,
 				8C8073131C63B62D001841D8 /* TestingAppDelegate.swift in Sources */,
+				8CA54DCD1C6408540030454D /* Cat2CatUIImage.swift in Sources */,
 				8C8073111C63B62D001841D8 /* AppDelegate.swift in Sources */,
-				8C8073161C63B62D001841D8 /* ViewController.swift in Sources */,
+				8C8073161C63B62D001841D8 /* HomeViewController.swift in Sources */,
+				8C80734A1C63F785001841D8 /* Constants.swift in Sources */,
 				8C80734C1C63F870001841D8 /* RFExtensions.swift in Sources */,
+				8C8073481C63F504001841D8 /* ZodiacSignCell.swift in Sources */,
 				8C80730F1C63B62D001841D8 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
