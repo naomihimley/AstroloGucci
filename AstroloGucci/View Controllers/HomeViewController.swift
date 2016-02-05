@@ -14,7 +14,12 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     //TODO: Update to auto generate IB Identifier strings
     let reuseIdentifier = "ZodiacCell"
+    let horoscopeDetailSegueID = "horoscopeDetailSegueIdentifier"
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.title = "Gucci"
+    }
     
     // MARK: - UICollectionViewDataSource protocol
     
@@ -25,9 +30,9 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! ZodiacSignCell
-        if let signIndex = Zodiac(rawValue: indexPath.row) {
-            cell.signImageView.image = signIndex.signImage()
-            cell.signLabel.text = signIndex.name()
+        if let signFromIndex = Zodiac(rawValue: indexPath.row) {
+            cell.signImageView.image = signFromIndex.signImage()
+            cell.signLabel.text = signFromIndex.name()
         }
         
         return cell
@@ -35,7 +40,16 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     // MARK: - UICollectionViewDelegate protocol
     
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        //TODO: Push to Horoscope view
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == horoscopeDetailSegueID {
+            let horoscopeDetailVC = segue.destinationViewController as! HoroscopeDetaillViewController
+            if sender!.isKindOfClass(ZodiacSignCell) {
+                let cell = sender as! ZodiacSignCell
+                let indexPath = self.collectionView!.indexPathForCell(cell)
+                if let signFromIndex = Zodiac(rawValue: indexPath!.row) {
+                    horoscopeDetailVC.zodiacSign = signFromIndex
+                }
+            }
+        }
     }
 }

@@ -9,6 +9,7 @@
 import Foundation
 
 public extension NSDate {
+    //TODO: Add a func that returns the dates span for a Zodiac type
 
     /**
     Instance method that returns the Zodiac sign for the NSDate that it is called on.
