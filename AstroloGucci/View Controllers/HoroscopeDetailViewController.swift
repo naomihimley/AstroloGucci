@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HoroscopeDetaillViewController: UIViewController {
+class HoroscopeDetailViewController: UIViewController {
 
     @IBOutlet weak var signImageView: UIImageView!
     @IBOutlet weak var signAndDateLabel: UILabel!
@@ -17,13 +17,14 @@ class HoroscopeDetaillViewController: UIViewController {
     var zodiacSign : Zodiac?
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Horoscope of the Day"
         guard let zodiacSign = zodiacSign else {
             return
         }
         signImageView.image = zodiacSign.signImage()
-        //TODO: create date formatter to show today's date on the last line
-        signAndDateLabel.text = "\(zodiacSign.name()) \n \(zodiacSign.dateSpanOfZodiac()) \n Todays Date"
-        
+
+        let todaysDate = NSDate()
+        signAndDateLabel.text = "\(zodiacSign.name()) \n\(zodiacSign.dateSpanOfZodiac()) \n\(todaysDate.stringMMddyyyyFormat())"
         //TODO: Set horoscopeTextView's text from Gucci Mane lyrics generator once API is exposed
     }
 }

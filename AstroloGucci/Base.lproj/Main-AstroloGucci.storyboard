@@ -90,10 +90,10 @@
             </objects>
             <point key="canvasLocation" x="155" y="731"/>
         </scene>
-        <!--Horoscope Detaill View Controller-->
+        <!--Horoscope Detail View Controller-->
         <scene sceneID="xRT-QR-qhl">
             <objects>
-                <viewController id="Vw6-gz-JIZ" customClass="HoroscopeDetaillViewController" customModule="AstroloGucci" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Vw6-gz-JIZ" customClass="HoroscopeDetailViewController" customModule="AstroloGucci" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pMU-4i-5fT"/>
                         <viewControllerLayoutGuide type="bottom" id="VJa-fe-cWI"/>
@@ -103,14 +103,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LX0-8e-gS2">
-                                <rect key="frame" x="225" y="72" width="50" height="50"/>
+                                <rect key="frame" x="225" y="100" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="LX0-8e-gS2" secondAttribute="height" multiplier="1:1" id="2A1-k1-NBN"/>
                                     <constraint firstAttribute="width" constant="50" id="gYd-Vl-0MN"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fth-za-XQl">
-                                <rect key="frame" x="295" y="72" width="150" height="50"/>
+                                <rect key="frame" x="295" y="100" width="150" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="joo-wD-aEZ"/>
                                 </constraints>
@@ -119,9 +119,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38o-cs-mfi">
-                                <rect key="frame" x="20" y="142" width="560" height="438"/>
+                                <rect key="frame" x="20" y="170" width="560" height="410"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">So Icy C.E.O., I'm a fool with the snow
+                                <string key="text">So Icy C.E.O., I'm a fool with the snow
 They think I'm putting VVS jewels in the coke
 My watch a cool hundred, Paint-job a cold 20
 And after this flip, I'm quitting the trap cold-turkey...psych!
@@ -145,16 +145,19 @@ That's a whole chick
 Want a bad bitch? Gotta have bricks
 Yeah that makes sense
 Yeah, I make hits
-But I still take bricks</mutableString>
+But I still take bricks</string>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Vw6-gz-JIZ" id="Hlg-5j-nGl"/>
+                                </connections>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="38o-cs-mfi" secondAttribute="trailing" constant="20" id="1Bg-ID-IYK"/>
                             <constraint firstItem="Fth-za-XQl" firstAttribute="height" secondItem="LX0-8e-gS2" secondAttribute="height" id="3Ba-oW-oiU"/>
-                            <constraint firstItem="LX0-8e-gS2" firstAttribute="top" secondItem="TSp-pf-rkM" secondAttribute="topMargin" constant="72" id="A19-5V-1xl"/>
+                            <constraint firstItem="LX0-8e-gS2" firstAttribute="top" secondItem="TSp-pf-rkM" secondAttribute="topMargin" constant="100" id="A19-5V-1xl"/>
                             <constraint firstItem="38o-cs-mfi" firstAttribute="leading" secondItem="TSp-pf-rkM" secondAttribute="leading" constant="20" id="WfU-3d-8V2"/>
                             <constraint firstItem="Fth-za-XQl" firstAttribute="leading" secondItem="LX0-8e-gS2" secondAttribute="trailing" constant="20" id="hoP-u3-PZU"/>
                             <constraint firstItem="Fth-za-XQl" firstAttribute="top" secondItem="LX0-8e-gS2" secondAttribute="top" id="hyB-Dr-nFp"/>

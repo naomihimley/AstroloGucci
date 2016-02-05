@@ -19,6 +19,8 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Gucci"
+        // Set title of backBarButtonItem to an empty string to only show the arrow, no title
+        self.navigationItem.backBarButtonItem = UIBarButtonItem.init(title: " ", style: .Plain, target: nil, action: nil)
     }
     
     // MARK: - UICollectionViewDataSource protocol
@@ -42,7 +44,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == horoscopeDetailSegueID {
-            let horoscopeDetailVC = segue.destinationViewController as! HoroscopeDetaillViewController
+            let horoscopeDetailVC = segue.destinationViewController as! HoroscopeDetailViewController
             if sender!.isKindOfClass(ZodiacSignCell) {
                 let cell = sender as! ZodiacSignCell
                 let indexPath = self.collectionView!.indexPathForCell(cell)

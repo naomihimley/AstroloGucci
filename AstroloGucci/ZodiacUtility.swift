@@ -1,5 +1,5 @@
 //
-//  Constants.swift
+//  ZodiacUtility.swift
 //  AstroloGucci
 //
 //  Created by Naomi Himley on 2/4/16.
@@ -12,8 +12,8 @@ import UIKit
 
 /**
  Enum for the Zodiac symbol
- Original Credit: https://github.com/RichFell/RFZodiacExt
  
+ Original Credit: https://github.com/RichFell/RFZodiacExt
  */
 public enum Zodiac : Int {
     case Aries
@@ -50,11 +50,11 @@ public enum Zodiac : Int {
         case .Pisces: return "Pisces"
         }
     }
-    
+
     /**
      Instance method that returns a string of the dates spanned by the Zodiac object passed in
      
-     - returns: String showing date span of Zodiac Sign formatted to "startDate - endDate"
+     - returns: String showing date span of Zodiac Sign formatted as "startDate - endDate"
      */
     public func dateSpanOfZodiac()-> String {
         switch self {
@@ -140,7 +140,7 @@ public enum Zodiac : Int {
     }
     
     /**
-     The symbol for the Zodiac type
+     The unicode symbol for the Zodiac type
      
      - returns: The String symbol for the Zodiac type
      */
