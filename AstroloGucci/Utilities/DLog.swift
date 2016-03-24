@@ -23,9 +23,9 @@ Note: The message is the only required variable for any of these.
 - parameter message:  The message you wish to log out.
 */
 func DLog(@autoclosure message: () -> String,
-    filename: String = __FILE__,
-    function: String = __FUNCTION__,
-    line: Int = __LINE__) {
+                       filename: String = #file,
+    function: String = #function,
+    line: Int = #line) {
         #if DEBUG
             detailedLog(message(), filename, function, line)
         #else
@@ -39,9 +39,9 @@ A detailed log statement which will always print.
 - parameter message:  The message you wish to log out.
 */
 func ALog(message: String,
-    filename: String = __FILE__,
-    function: String = __FUNCTION__,
-    line: Int = __LINE__) {
+          filename: String = #file,
+          function: String = #function,
+          line: Int = #line) {
     detailedLog(message, filename, function, line)
 }
 
