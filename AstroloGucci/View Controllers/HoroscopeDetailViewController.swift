@@ -24,7 +24,7 @@ class HoroscopeDetailViewController: UIViewController {
     var zodiacSign : Zodiac?
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Horoscope of the Day"
+        self.title = GucciString.HoroscopeOfTheDay
         guard let zodiacSign = zodiacSign else {
             return
         }

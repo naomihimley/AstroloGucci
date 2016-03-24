@@ -51,6 +51,8 @@
 		8CA54DE41C6409DA0030454D /* VOKBenkode in Resources */ = {isa = PBXBuildFile; fileRef = 8CA54DDA1C6409DA0030454D /* VOKBenkode */; };
 		8CA54DE51C6409DA0030454D /* VOKMockUrlProtocol in Resources */ = {isa = PBXBuildFile; fileRef = 8CA54DDB1C6409DA0030454D /* VOKMockUrlProtocol */; };
 		8CA54DFF1C640FCA0030454D /* HoroscopeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA54DFE1C640FCA0030454D /* HoroscopeDetailViewController.swift */; };
+		8CEDC2441CA487B300BADD88 /* NetworkingUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDC2431CA487B300BADD88 /* NetworkingUtility.swift */; };
+		8CEDC2461CA4888300BADD88 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEDC2451CA4888300BADD88 /* Constants.swift */; };
 		C971CC018FC47929C66FE411 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76C3A3240B677FA6A4676C8 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -172,6 +174,8 @@
 		8CA54DDA1C6409DA0030454D /* VOKBenkode */ = {isa = PBXFileReference; lastKnownFileType = folder; name = VOKBenkode; path = Pods/VOKBenkode; sourceTree = "<group>"; };
 		8CA54DDB1C6409DA0030454D /* VOKMockUrlProtocol */ = {isa = PBXFileReference; lastKnownFileType = folder; name = VOKMockUrlProtocol; path = Pods/VOKMockUrlProtocol; sourceTree = "<group>"; };
 		8CA54DFE1C640FCA0030454D /* HoroscopeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HoroscopeDetailViewController.swift; path = "View Controllers/HoroscopeDetailViewController.swift"; sourceTree = "<group>"; };
+		8CEDC2431CA487B300BADD88 /* NetworkingUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingUtility.swift; sourceTree = "<group>"; };
+		8CEDC2451CA4888300BADD88 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B2A7A3CA7D3D148FB14676F0 /* Pods-AstroloGucciTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AstroloGucciTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AstroloGucciTests/Pods-AstroloGucciTests.release.xcconfig"; sourceTree = "<group>"; };
 		BE32835AEFB8CE2AAEC69D83 /* Pods-AstroloGucciUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AstroloGucciUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AstroloGucciUITests/Pods-AstroloGucciUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C76C3A3240B677FA6A4676C8 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -317,6 +321,8 @@
 			children = (
 				8C8073181C63B62D001841D8 /* DLog.swift */,
 				8C8073491C63F785001841D8 /* ZodiacUtility.swift */,
+				8CEDC2431CA487B300BADD88 /* NetworkingUtility.swift */,
+				8CEDC2451CA4888300BADD88 /* Constants.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -803,8 +809,10 @@
 				8C80734A1C63F785001841D8 /* ZodiacUtility.swift in Sources */,
 				8C80734C1C63F870001841D8 /* RFExtensions.swift in Sources */,
 				8C8073481C63F504001841D8 /* ZodiacSignCell.swift in Sources */,
+				8CEDC2441CA487B300BADD88 /* NetworkingUtility.swift in Sources */,
 				8C80730F1C63B62D001841D8 /* main.swift in Sources */,
 				8CA54DFF1C640FCA0030454D /* HoroscopeDetailViewController.swift in Sources */,
+				8CEDC2461CA4888300BADD88 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,10 +12,6 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
 
     @IBOutlet weak var collectionView: UICollectionView!
     
-    //TODO: Update to auto generate IB Identifier strings
-    let reuseIdentifier = "ZodiacCell"
-    let horoscopeDetailSegueID = "horoscopeDetailSegueIdentifier"
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Gucci"
@@ -31,7 +27,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! ZodiacSignCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(StoryboardIdentifier.reuseIdentifier, forIndexPath: indexPath) as! ZodiacSignCell
         if let signFromIndex = Zodiac(rawValue: indexPath.row) {
             cell.signImageView.image = signFromIndex.signImage()
             cell.signLabel.text = signFromIndex.name()
@@ -43,7 +39,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     // MARK: - UICollectionViewDelegate protocol
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == horoscopeDetailSegueID {
+        if segue.identifier == StoryboardIdentifier.horoscopeDetailSegueID {
             let horoscopeDetailVC = segue.destinationViewController as! HoroscopeDetailViewController
             if sender!.isKindOfClass(ZodiacSignCell) {
                 let cell = sender as! ZodiacSignCell
