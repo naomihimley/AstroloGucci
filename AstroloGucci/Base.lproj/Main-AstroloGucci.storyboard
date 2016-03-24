@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bjR-DT-NLp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bjR-DT-NLp">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -102,24 +102,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LX0-8e-gS2">
-                                <rect key="frame" x="225" y="100" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="LX0-8e-gS2" secondAttribute="height" multiplier="1:1" id="2A1-k1-NBN"/>
-                                    <constraint firstAttribute="width" constant="50" id="gYd-Vl-0MN"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fth-za-XQl">
-                                <rect key="frame" x="295" y="100" width="150" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="joo-wD-aEZ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38o-cs-mfi">
-                                <rect key="frame" x="20" y="170" width="560" height="410"/>
+                                <rect key="frame" x="20" y="203" width="560" height="377"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">So Icy C.E.O., I'm a fool with the snow
 They think I'm putting VVS jewels in the coke
@@ -152,21 +136,54 @@ But I still take bricks</string>
                                     <outlet property="delegate" destination="Vw6-gz-JIZ" id="Hlg-5j-nGl"/>
                                 </connections>
                             </textView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="ISl-nT-Fdb">
+                                <rect key="frame" x="20" y="85" width="560" height="29"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <segments>
+                                    <segment title="Yesterday"/>
+                                    <segment title="Today"/>
+                                    <segment title="Tomorrow"/>
+                                </segments>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="didSelectDateControl:" destination="Vw6-gz-JIZ" eventType="valueChanged" id="RfF-WZ-SUF"/>
+                                </connections>
+                            </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LX0-8e-gS2">
+                                <rect key="frame" x="225" y="133" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LX0-8e-gS2" secondAttribute="height" multiplier="1:1" id="2A1-k1-NBN"/>
+                                    <constraint firstAttribute="width" constant="50" id="gYd-Vl-0MN"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fth-za-XQl">
+                                <rect key="frame" x="295" y="133" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="joo-wD-aEZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="38o-cs-mfi" secondAttribute="trailing" constant="20" id="1Bg-ID-IYK"/>
                             <constraint firstItem="Fth-za-XQl" firstAttribute="height" secondItem="LX0-8e-gS2" secondAttribute="height" id="3Ba-oW-oiU"/>
-                            <constraint firstItem="LX0-8e-gS2" firstAttribute="top" secondItem="TSp-pf-rkM" secondAttribute="topMargin" constant="100" id="A19-5V-1xl"/>
+                            <constraint firstItem="ISl-nT-Fdb" firstAttribute="top" secondItem="TSp-pf-rkM" secondAttribute="topMargin" constant="85" id="Owx-sW-TqM"/>
                             <constraint firstItem="38o-cs-mfi" firstAttribute="leading" secondItem="TSp-pf-rkM" secondAttribute="leading" constant="20" id="WfU-3d-8V2"/>
+                            <constraint firstItem="ISl-nT-Fdb" firstAttribute="leading" secondItem="TSp-pf-rkM" secondAttribute="leading" constant="20" id="cww-qO-TBK"/>
+                            <constraint firstItem="LX0-8e-gS2" firstAttribute="top" secondItem="ISl-nT-Fdb" secondAttribute="bottom" constant="20" id="het-BB-gDo"/>
                             <constraint firstItem="Fth-za-XQl" firstAttribute="leading" secondItem="LX0-8e-gS2" secondAttribute="trailing" constant="20" id="hoP-u3-PZU"/>
                             <constraint firstItem="Fth-za-XQl" firstAttribute="top" secondItem="LX0-8e-gS2" secondAttribute="top" id="hyB-Dr-nFp"/>
+                            <constraint firstAttribute="trailing" secondItem="ISl-nT-Fdb" secondAttribute="trailing" constant="20" id="kwK-2P-2NT"/>
                             <constraint firstAttribute="bottomMargin" secondItem="38o-cs-mfi" secondAttribute="bottom" constant="20" id="oN8-S9-086"/>
                             <constraint firstItem="38o-cs-mfi" firstAttribute="top" secondItem="LX0-8e-gS2" secondAttribute="bottom" constant="20" id="tLP-L7-4Qi"/>
                             <constraint firstItem="LX0-8e-gS2" firstAttribute="centerX" secondItem="TSp-pf-rkM" secondAttribute="centerX" constant="-50" id="tOT-Jo-wAG"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="dateSegmentedControl" destination="ISl-nT-Fdb" id="CAt-SQ-8dw"/>
                         <outlet property="horoscopeTextView" destination="38o-cs-mfi" id="TPC-tF-aph"/>
                         <outlet property="signAndDateLabel" destination="Fth-za-XQl" id="xtT-ZD-kDS"/>
                         <outlet property="signImageView" destination="LX0-8e-gS2" id="Kfa-uq-zwZ"/>
