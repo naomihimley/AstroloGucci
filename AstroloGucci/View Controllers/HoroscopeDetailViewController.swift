@@ -30,23 +30,34 @@ class HoroscopeDetailViewController: UIViewController {
         }
         signImageView.image = zodiacSign.signImage()
 
+        //Default to showing today's date on initial load
         let todaysDate = NSDate()
-        signAndDateLabel.text = "\(zodiacSign.name()) \n\(zodiacSign.dateSpanOfZodiac()) \n\(todaysDate.stringMMddyyyyFormat())"
+        setSignAndDateLabelForDate(todaysDate)
         //TODO: Set horoscopeTextView's text from Gucci Mane lyrics generator once API is exposed
     }
 
     @IBAction func didSelectDateControl(sender: UISegmentedControl) {
         let selectedDate = ZodiacDates(rawValue: dateSegmentedControl.selectedSegmentIndex)
+        let calendar = NSCalendar.currentCalendar()
         switch selectedDate! {
             case .Yesterday:
                 //TODO: Display Yesterday's horoscope for zodiacSign
-                DLog("Yesterday")
+                let yesterdaysDate = calendar.dateByAddingUnit(.Day, value: -1, toDate: NSDate(), options: [])
+                setSignAndDateLabelForDate(yesterdaysDate)
             case .Today:
                 //TODO: Display Today's horoscope for zodiacSign
-                DLog("Today")
+                setSignAndDateLabelForDate(NSDate())
             case .Tomorrow:
                 //TODO: Display Tomorrow's horoscope for zodiacSign
-                DLog("Tomorrow")
+                let tomorrowsDate = calendar.dateByAddingUnit(.Day, value: 1, toDate: NSDate(), options: [])
+                setSignAndDateLabelForDate(tomorrowsDate)
         }
+    }
+    
+    func setSignAndDateLabelForDate(date : NSDate?) {
+        guard let zodiacSign = zodiacSign, let date = date else {
+            return
+        }
+        signAndDateLabel.text = "\(zodiacSign.name()) \n\(zodiacSign.dateSpanOfZodiac()) \n\(date.stringMMddyyyyFormat())"
     }
 }
