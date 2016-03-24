@@ -33,7 +33,12 @@ class HoroscopeDetailViewController: UIViewController {
         //Default to showing today's date on initial load
         let todaysDate = NSDate()
         setSignAndDateLabelForDate(todaysDate)
-        //TODO: Set horoscopeTextView's text from Gucci Mane lyrics generator once API is exposed
+        guard let todaysLyric = NSUserDefaults.standardUserDefaults().objectForKey(UserDefaultKey.TodayLyric)
+            else {
+                horoscopeTextView.text = "Generic Error"
+                return
+        }
+        horoscopeTextView.text = todaysLyric as! String
     }
 
     @IBAction func didSelectDateControl(sender: UISegmentedControl) {
@@ -41,16 +46,31 @@ class HoroscopeDetailViewController: UIViewController {
         let calendar = NSCalendar.currentCalendar()
         switch selectedDate! {
             case .Yesterday:
-                //TODO: Display Yesterday's horoscope for zodiacSign
                 let yesterdaysDate = calendar.dateByAddingUnit(.Day, value: -1, toDate: NSDate(), options: [])
                 setSignAndDateLabelForDate(yesterdaysDate)
+                guard let yesterdayLyrics = NSUserDefaults.standardUserDefaults().objectForKey(UserDefaultKey.YesterdayLyric)
+                    else {
+                        horoscopeTextView.text = "Generic Error"
+                        break
+                    }
+                horoscopeTextView.text = yesterdayLyrics as! String
             case .Today:
-                //TODO: Display Today's horoscope for zodiacSign
                 setSignAndDateLabelForDate(NSDate())
+                guard let todaysLyric = NSUserDefaults.standardUserDefaults().objectForKey(UserDefaultKey.TodayLyric)
+                    else {
+                        horoscopeTextView.text = "Generic Error"
+                        break
+                }
+                horoscopeTextView.text = todaysLyric as! String
             case .Tomorrow:
-                //TODO: Display Tomorrow's horoscope for zodiacSign
                 let tomorrowsDate = calendar.dateByAddingUnit(.Day, value: 1, toDate: NSDate(), options: [])
                 setSignAndDateLabelForDate(tomorrowsDate)
+                guard let tomorrowLyric = NSUserDefaults.standardUserDefaults().objectForKey(UserDefaultKey.TomorrowLyric)
+                    else {
+                        horoscopeTextView.text = "Generic Error"
+                        break
+                }
+                horoscopeTextView.text = tomorrowLyric as! String
         }
     }
     
