@@ -8,6 +8,9 @@
 
 import UIKit
 
+//TODO: Instead of rewriting the 3 horoscopes each day, save Today's as Yesterdays depending on previous fetch date
+//Also need to keep the lyrics associated to a sign, instead of being same for all signs
+
 class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
     @IBOutlet weak var collectionView: UICollectionView!
